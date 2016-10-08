@@ -1,0 +1,60 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 area             program, code, readonly
+    2 00000000         entry
+    3 00000000         main
+    4 00000000 E59F1004        LDR              R1,value
+    5 00000004 E1A02101        MOV              R2,R1,LSL #0X02
+    6 00000008 EF000011        SWI              &11
+    7 0000000C                 area             program, data, readonly
+    8 0000000C 00000005 
+                       value   DCD              &00000005
+    9 00000010                 END
+Command Line: --debug --xref --bi --apcs=interwork --depend=.\shift_left_by_2_b
+its.d -o.\shift_left_by_2_bits.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Inc
+lude --predefine="__EVAL SETA 1" --list=.\shift_left_by_2_bits.lst shift_left_b
+y_2_bits\shift_left_by_2_bits.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+entry 00000000
+
+Symbol: entry
+   Definitions
+      At line 2 in file shift_left_by_2_bits\shift_left_by_2_bits.asm
+   Uses
+      None
+Comment: entry unused
+main 00000000
+
+Symbol: main
+   Definitions
+      At line 3 in file shift_left_by_2_bits\shift_left_by_2_bits.asm
+   Uses
+      None
+Comment: main unused
+program 00000000
+
+Symbol: program
+   Definitions
+      At line 1 in file shift_left_by_2_bits\shift_left_by_2_bits.asm
+   Uses
+      None
+Comment: program unused
+value 0000000C
+
+Symbol: value
+   Definitions
+      At line 8 in file shift_left_by_2_bits\shift_left_by_2_bits.asm
+   Uses
+      At line 4 in file shift_left_by_2_bits\shift_left_by_2_bits.asm
+Comment: value used once
+4 symbols
+335 symbols in table

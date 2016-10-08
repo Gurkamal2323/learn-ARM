@@ -1,0 +1,2 @@
+Dependencies for Project 'ARM_Programs', Target 'Target 1': (DO NOT MODIFY !)
+F (.\shift_left_by_2_bits\shift_left_by_2_bits.asm)(0x57F9078E)(--cpu ARM7TDMI --bi --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include--list .\shift_left_by_2_bits.lst --xref -o .\shift_left_by_2_bits.o --depend .\shift_left_by_2_bits.d)
