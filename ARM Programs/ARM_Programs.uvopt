@@ -166,13 +166,13 @@
       <FileType>2</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>6</ColumnNumber>
+      <ColumnNumber>19</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>10</CurrentLine>
+      <CurrentLine>5</CurrentLine>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\shift_right_by_no_of_bits_stored_in_a_register\shift_right_by_no_of_bits_stored_in_a_register.asm</PathWithFileName>
-      <FilenameWithoutPath>shift_right_by_no_of_bits_stored_in_a_register.asm</FilenameWithoutPath>
+      <PathWithFileName>.\how_many_bytes_are_present _in_given_set_which_resembles_#0XAC\how_many_bytes_are_present _in_given_set_which_resembles_#0XAC.asm</PathWithFileName>
+      <FilenameWithoutPath>how_many_bytes_are_present _in_given_set_which_resembles_#0XAC.asm</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
