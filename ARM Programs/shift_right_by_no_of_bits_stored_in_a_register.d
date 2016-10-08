@@ -1,0 +1,1 @@
+.\shift_right_by_no_of_bits_stored_in_a_register.o: shift_right_by_no_of_bits_stored_in_a_register\shift_right_by_no_of_bits_stored_in_a_register.asm
