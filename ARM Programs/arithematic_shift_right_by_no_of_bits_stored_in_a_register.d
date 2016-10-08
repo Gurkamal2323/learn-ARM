@@ -1,0 +1,1 @@
+.\arithematic_shift_right_by_no_of_bits_stored_in_a_register.o: arithematic_shift_right_by_no_of_bits_stored_in_a_register\arithematic_shift_right_by_no_of_bits_stored_in_a_register.asm

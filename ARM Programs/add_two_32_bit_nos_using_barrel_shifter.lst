@@ -1,0 +1,81 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 area             program, code, readonly
+    2 00000000         entry
+    3 00000000         main
+    4 00000000 E59F0010        LDR              R0, value1
+    5 00000004 E59F1010        LDR              R1, value2
+    6 00000008 E5902000        LDR              R2,[R0]
+    7 0000000C E5913000        LDR              R3,[R1]
+    8 00000010 E0822103        ADD              R2,R2,R3,LSL #0X02
+    9 00000014 EF000011        SWI              &11
+   10 00000018                 area             program, data, readonly
+   11 00000018 A0000005 
+                       value1  DCD              &A0000005
+   12 0000001C A0000003 
+                       value2  DCD              &A0000003
+   13 00000020                 END
+Command Line: --debug --xref --bi --apcs=interwork --depend=.\add_two_32_bit_no
+s_using_barrel_shifter.d -o.\add_two_32_bit_nos_using_barrel_shifter.o -IC:\Kei
+l\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --list=.
+\add_two_32_bit_nos_using_barrel_shifter.lst add_two_nos_using_barrel_shifter\a
+dd_two_32_bit_nos_using_barrel_shifter.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+entry 00000000
+
+Symbol: entry
+   Definitions
+      At line 2 in file add_two_nos_using_barrel_shifter\add_two_32_bit_nos_usi
+ng_barrel_shifter.asm
+   Uses
+      None
+Comment: entry unused
+main 00000000
+
+Symbol: main
+   Definitions
+      At line 3 in file add_two_nos_using_barrel_shifter\add_two_32_bit_nos_usi
+ng_barrel_shifter.asm
+   Uses
+      None
+Comment: main unused
+program 00000000
+
+Symbol: program
+   Definitions
+      At line 1 in file add_two_nos_using_barrel_shifter\add_two_32_bit_nos_usi
+ng_barrel_shifter.asm
+   Uses
+      None
+Comment: program unused
+value1 00000018
+
+Symbol: value1
+   Definitions
+      At line 11 in file add_two_nos_using_barrel_shifter\add_two_32_bit_nos_us
+ing_barrel_shifter.asm
+   Uses
+      At line 4 in file add_two_nos_using_barrel_shifter\add_two_32_bit_nos_usi
+ng_barrel_shifter.asm
+Comment: value1 used once
+value2 0000001C
+
+Symbol: value2
+   Definitions
+      At line 12 in file add_two_nos_using_barrel_shifter\add_two_32_bit_nos_us
+ing_barrel_shifter.asm
+   Uses
+      At line 5 in file add_two_nos_using_barrel_shifter\add_two_32_bit_nos_usi
+ng_barrel_shifter.asm
+Comment: value2 used once
+5 symbols
+336 symbols in table

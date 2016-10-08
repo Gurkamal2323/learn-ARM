@@ -1,0 +1,80 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 area             program, code, readonly
+    2 00000000         entry
+    3 00000000         main
+    4 00000000 E59F1008        LDR              R1, value1
+    5 00000004 E59F2008        LDR              R2, value2
+    6 00000008 E1A01251        MOV              R1,R1,ASR R2
+    7 0000000C EF000011        SWI              &11
+    8 00000010                 area             program, data, readonly
+    9 00000010 00000005 
+                       value1  DCD              &00000005
+   10 00000014 00000002 
+                       value2  DCD              &00000002
+   11 00000018                 END
+Command Line: --debug --xref --bi --apcs=interwork --depend=.\arithematic_shift
+_right_by_no_of_bits_stored_in_a_register.d -o.\arithematic_shift_right_by_no_o
+f_bits_stored_in_a_register.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Includ
+e --predefine="__EVAL SETA 1" --list=.\arithematic_shift_right_by_no_of_bits_st
+ored_in_a_register.lst arithematic_shift_right_by_no_of_bits_stored_in_a_regist
+er\arithematic_shift_right_by_no_of_bits_stored_in_a_register.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+entry 00000000
+
+Symbol: entry
+   Definitions
+      At line 2 in file arithematic_shift_right_by_no_of_bits_stored_in_a_regis
+ter\arithematic_shift_right_by_no_of_bits_stored_in_a_register.asm
+   Uses
+      None
+Comment: entry unused
+main 00000000
+
+Symbol: main
+   Definitions
+      At line 3 in file arithematic_shift_right_by_no_of_bits_stored_in_a_regis
+ter\arithematic_shift_right_by_no_of_bits_stored_in_a_register.asm
+   Uses
+      None
+Comment: main unused
+program 00000000
+
+Symbol: program
+   Definitions
+      At line 1 in file arithematic_shift_right_by_no_of_bits_stored_in_a_regis
+ter\arithematic_shift_right_by_no_of_bits_stored_in_a_register.asm
+   Uses
+      None
+Comment: program unused
+value1 00000010
+
+Symbol: value1
+   Definitions
+      At line 9 in file arithematic_shift_right_by_no_of_bits_stored_in_a_regis
+ter\arithematic_shift_right_by_no_of_bits_stored_in_a_register.asm
+   Uses
+      At line 4 in file arithematic_shift_right_by_no_of_bits_stored_in_a_regis
+ter\arithematic_shift_right_by_no_of_bits_stored_in_a_register.asm
+Comment: value1 used once
+value2 00000014
+
+Symbol: value2
+   Definitions
+      At line 10 in file arithematic_shift_right_by_no_of_bits_stored_in_a_regi
+ster\arithematic_shift_right_by_no_of_bits_stored_in_a_register.asm
+   Uses
+      At line 5 in file arithematic_shift_right_by_no_of_bits_stored_in_a_regis
+ter\arithematic_shift_right_by_no_of_bits_stored_in_a_register.asm
+Comment: value2 used once
+5 symbols
+336 symbols in table

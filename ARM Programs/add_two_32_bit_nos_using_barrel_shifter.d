@@ -1,0 +1,1 @@
+.\add_two_32_bit_nos_using_barrel_shifter.o: add_two_nos_using_barrel_shifter\add_two_32_bit_nos_using_barrel_shifter.asm

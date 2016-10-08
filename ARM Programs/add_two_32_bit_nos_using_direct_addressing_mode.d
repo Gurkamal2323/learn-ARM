@@ -1,0 +1,1 @@
+.\add_two_32_bit_nos_using_direct_addressing_mode.o: add_two_32_bit_nos_using_direct_addressing_mode\add_two_32_bit_nos_using_direct_addressing_mode.asm

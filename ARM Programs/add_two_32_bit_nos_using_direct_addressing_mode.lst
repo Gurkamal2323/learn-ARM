@@ -1,0 +1,80 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 area             program, code, readonly
+    2 00000000         entry
+    3 00000000         main
+    4 00000000 E59F1008        LDR              R1, value1
+    5 00000004 E59F2008        LDR              R2, value2
+    6 00000008 E0811002        ADD              R1,R1,R2
+    7 0000000C EF000011        SWI              &11
+    8 00000010                 area             program, data, readonly
+    9 00000010 F0000005 
+                       value1  DCD              &F0000005
+   10 00000014 F0000003 
+                       value2  DCD              &F0000003
+   11 00000018                 END
+Command Line: --debug --xref --bi --apcs=interwork --depend=.\add_two_32_bit_no
+s_using_direct_addressing_mode.d -o.\add_two_32_bit_nos_using_direct_addressing
+_mode.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include --predefine="__EVAL 
+SETA 1" --list=.\add_two_32_bit_nos_using_direct_addressing_mode.lst add_two_32
+_bit_nos_using_direct_addressing_mode\add_two_32_bit_nos_using_direct_addressin
+g_mode.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+entry 00000000
+
+Symbol: entry
+   Definitions
+      At line 2 in file add_two_32_bit_nos_using_direct_addressing_mode\add_two
+_32_bit_nos_using_direct_addressing_mode.asm
+   Uses
+      None
+Comment: entry unused
+main 00000000
+
+Symbol: main
+   Definitions
+      At line 3 in file add_two_32_bit_nos_using_direct_addressing_mode\add_two
+_32_bit_nos_using_direct_addressing_mode.asm
+   Uses
+      None
+Comment: main unused
+program 00000000
+
+Symbol: program
+   Definitions
+      At line 1 in file add_two_32_bit_nos_using_direct_addressing_mode\add_two
+_32_bit_nos_using_direct_addressing_mode.asm
+   Uses
+      None
+Comment: program unused
+value1 00000010
+
+Symbol: value1
+   Definitions
+      At line 9 in file add_two_32_bit_nos_using_direct_addressing_mode\add_two
+_32_bit_nos_using_direct_addressing_mode.asm
+   Uses
+      At line 4 in file add_two_32_bit_nos_using_direct_addressing_mode\add_two
+_32_bit_nos_using_direct_addressing_mode.asm
+Comment: value1 used once
+value2 00000014
+
+Symbol: value2
+   Definitions
+      At line 10 in file add_two_32_bit_nos_using_direct_addressing_mode\add_tw
+o_32_bit_nos_using_direct_addressing_mode.asm
+   Uses
+      At line 5 in file add_two_32_bit_nos_using_direct_addressing_mode\add_two
+_32_bit_nos_using_direct_addressing_mode.asm
+Comment: value2 used once
+5 symbols
+336 symbols in table
