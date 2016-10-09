@@ -1,0 +1,110 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 area             program, code, readonly
+    2 00000000         entry
+    3 00000000         main
+    4 00000000 E59F001C        LDR              R0, value1
+    5 00000004 E59F101C        LDR              R1, value2
+    6 00000008 E3A03001        MOV              R3, #0X01
+    7 0000000C E1A04000        MOV              R4, R0
+    8 00000010         loop
+    9 00000010 E2833001        ADD              R3, #0X01
+   10 00000014 E0844000        ADD              R4, R4, R0
+   11 00000018 E1530001        CMP              R3, R1
+   12 0000001C 1AFFFFFB        BNE              loop
+   13 00000020         END
+   14 00000020 EF000011        SWI              &11
+   15 00000024                 area             program, data, readonly
+   16 00000024 00000005 
+                       value1  DCD              &00000005
+   17 00000028 00000003 
+                       value2  DCD              &00000003
+   18 0000002C                 END
+Command Line: --debug --xref --bi --apcs=interwork --depend=.\how_to_multiply_t
+wo_number.d -o.\how_to_multiply_two_number.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\A
+RM\CMSIS\Include --predefine="__EVAL SETA 1" --list=.\how_to_multiply_two_numbe
+r.lst how_to_multiply_two_number\how_to_multiply_two_number.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+END 00000020
+
+Symbol: END
+   Definitions
+      At line 13 in file how_to_multiply_two_number\how_to_multiply_two_number.
+asm
+   Uses
+      None
+Comment: END unused
+entry 00000000
+
+Symbol: entry
+   Definitions
+      At line 2 in file how_to_multiply_two_number\how_to_multiply_two_number.a
+sm
+   Uses
+      None
+Comment: entry unused
+loop 00000010
+
+Symbol: loop
+   Definitions
+      At line 8 in file how_to_multiply_two_number\how_to_multiply_two_number.a
+sm
+   Uses
+      At line 12 in file how_to_multiply_two_number\how_to_multiply_two_number.
+asm
+Comment: loop used once
+main 00000000
+
+Symbol: main
+   Definitions
+      At line 3 in file how_to_multiply_two_number\how_to_multiply_two_number.a
+sm
+   Uses
+      None
+Comment: main unused
+program 00000000
+
+Symbol: program
+   Definitions
+      At line 1 in file how_to_multiply_two_number\how_to_multiply_two_number.a
+sm
+   Uses
+      None
+Comment: program unused
+value1 00000024
+
+Symbol: value1
+   Definitions
+      At line 16 in file how_to_multiply_two_number\how_to_multiply_two_number.
+asm
+   Uses
+      At line 4 in file how_to_multiply_two_number\how_to_multiply_two_number.a
+sm
+Comment: value1 used once
+value2 00000028
+
+Symbol: value2
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+Relocatable symbols
+
+   Definitions
+      At line 17 in file how_to_multiply_two_number\how_to_multiply_two_number.
+asm
+   Uses
+      At line 5 in file how_to_multiply_two_number\how_to_multiply_two_number.a
+sm
+Comment: value2 used once
+7 symbols
+338 symbols in table

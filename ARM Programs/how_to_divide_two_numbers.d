@@ -1,0 +1,1 @@
+.\how_to_divide_two_numbers.o: how_to_divide_two_numbers\how_to_divide_two_numbers.asm

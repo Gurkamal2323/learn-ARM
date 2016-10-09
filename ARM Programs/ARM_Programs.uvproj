@@ -406,9 +406,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>how_many_bytes_are_present _in_given_set_which_resembles_#0XAC.asm</FileName>
+              <FileName>how_to_divide_two_numbers.asm</FileName>
               <FileType>2</FileType>
-              <FilePath>.\how_many_bytes_are_present _in_given_set_which_resembles_#0XAC\how_many_bytes_are_present _in_given_set_which_resembles_#0XAC.asm</FilePath>
+              <FilePath>.\how_to_divide_two_numbers\how_to_divide_two_numbers.asm</FilePath>
             </File>
           </Files>
         </Group>

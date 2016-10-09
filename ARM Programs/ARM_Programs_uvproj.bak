@@ -406,9 +406,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>shift_right_by_no_of_bits_stored_in_a_register.asm</FileName>
+              <FileName>how_many_bytes_are_present _in_given_set_which_resembles_#0XAC.asm</FileName>
               <FileType>2</FileType>
-              <FilePath>.\shift_right_by_no_of_bits_stored_in_a_register\shift_right_by_no_of_bits_stored_in_a_register.asm</FilePath>
+              <FilePath>.\how_many_bytes_are_present _in_given_set_which_resembles_#0XAC\how_many_bytes_are_present _in_given_set_which_resembles_#0XAC.asm</FilePath>
             </File>
           </Files>
         </Group>
